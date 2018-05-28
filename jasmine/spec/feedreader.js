@@ -9,8 +9,7 @@
  * to ensure they don't run until the DOM is ready.
  */
 $(function () {
-    /* TEST SUITE 1 -> This is our first test suite - a test suite  just contains a related set of tests. This suite is all about the RSS feeds definitions, the allFeeds variable in our application.
-     */
+    // TEST SUITE 1 -> This is our first test suite - a test suite  just contains a related set of tests. This suite is all about the RSS feeds definitions, the allFeeds variable in our application.
     describe('RSS Feeds', function () {
 
         // TEST 1 ->  tests to make sure that the allFeeds variable has been defined and that it is not empty
@@ -20,18 +19,23 @@ $(function () {
             expect(allFeeds.length).not.toBe(0);
         });
 
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a URL defined
-         * and that the URL is not empty.
-         */
 
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a name defined
-         * and that the name is not empty.
-         */
+        // TEST 2 -> a test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty.
+
+        it('have a valid URL defined', function () {
+            allFeeds.forEach(function (feed) {
+                expect(feed.url).toBeDefined();
+                expect(feed.url.length).not.toBe(0);
+            });
+
+
+            /* TODO: Write a test that loops through each feed
+             * in the allFeeds object and ensures it has a name defined
+             * and that the name is not empty.
+             */
+        });
+
     });
-
-
     /* TODO: Write a new test suite named "The menu" */
 
     /* TODO: Write a test that ensures the menu element is
