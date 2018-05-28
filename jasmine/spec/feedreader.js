@@ -66,8 +66,10 @@ $(function () {
             expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
+    // TEST SUITE 4 ->  "New Feed Selection"
+    describe('New Feed Selection', function () {
 
-
+    });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
 
