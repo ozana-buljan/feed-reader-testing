@@ -61,20 +61,28 @@ $(function () {
         beforeEach(function (done) {
             loadFeed(0, done);
         });
-
         it('have at least one entry', function () {
             expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
+
     // TEST SUITE 4 ->  "New Feed Selection"
     describe('New Feed Selection', function () {
+        let previousFeed; //saves html of an old feed
 
+        // TEST 7 ->  a test that ensures when a new feed is loaded by the loadFeed (asynchronous!) function that the content actually changes.
+        beforeEach(function (done) {
+            loadFeed(0, function () {
+                // store old feed
+                previousFeed = $('.feed').html();
+                // get new feed
+                loadFeed(1, done);
+            });
+        });
+
+        it('is different from the previous feed', function () {
+            expect($('.feed').html()).not.toBe(previousFeed);
+        });
     });
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
-
-    /* TODO: Write a test that ensures when a new feed is loaded
-     * by the loadFeed function that the content actually changes.
-     * Remember, loadFeed() is asynchronous.
-     */
 }());
