@@ -23,7 +23,7 @@ New Feed Selection:
 ## Running instructions
 
 ### Web live
-Follow the link to view the project: https://ozana-buljan.github.io/feedreader-testing/
+Follow the link to view the project: https://ozana-buljan.github.io/feed-reader-testing/
 
 ### Run locally
 *   Download the repository: click download ZIP on the right of the screen and extract the zip file to your computer or clone the repository using Git.
