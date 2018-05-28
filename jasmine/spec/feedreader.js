@@ -22,20 +22,24 @@ $(function () {
 
         // TEST 2 -> a test that loops through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty.
 
-        it('have a valid URL defined', function () {
+        it('have a valid URL defined (not empty)', function () {
             allFeeds.forEach(function (feed) {
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).not.toBe(0);
             });
-
-
-            /* TODO: Write a test that loops through each feed
-             * in the allFeeds object and ensures it has a name defined
-             * and that the name is not empty.
-             */
         });
 
+        // TEST 3 -> a test that loops through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty.
+        it('have valid names defined (not empty)', function () {
+            allFeeds.forEach(function (feed) {
+                expect(feed.name).toBeDefined();
+                expect(feed.name.length).not.toBe(0);
+            });
+        });
     });
+
+
+
     /* TODO: Write a new test suite named "The menu" */
 
     /* TODO: Write a test that ensures the menu element is
