@@ -8,11 +8,14 @@ RSS Feeds:
 *   are defined
 *   have a valid URL defined
 *   have valid names defined
+
 The menu:
 *   is hidden
 *   toggles visibility on click on the menu icon
+
 Initial Entries:
 *   have at least one entry
+
 New Feed Selection:
 *   is different from the previous feed
 
@@ -20,7 +23,7 @@ New Feed Selection:
 ## Running instructions
 
 ### Web live
-Follow the link to view the project:
+Follow the link to view the project: https://ozana-buljan.github.io/feedreader-testing/
 
 ### Run locally
 *   Download the repository: click download ZIP on the right of the screen and extract the zip file to your computer or clone the repository using Git.
