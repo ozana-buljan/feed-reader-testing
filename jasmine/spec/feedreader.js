@@ -25,7 +25,7 @@ $(function () {
         it('have a valid URL defined', function () {
             allFeeds.forEach(function (feed) {
                 expect(feed.url).toBeDefined();
-                expect(feed.url.length).not.toBe(0);
+                expect(feed.url.length).toBeGreaterThan(0);
             });
         });
 
@@ -33,7 +33,7 @@ $(function () {
         it('have valid names defined', function () {
             allFeeds.forEach(function (feed) {
                 expect(feed.name).toBeDefined();
-                expect(feed.name.length).not.toBe(0);
+                expect(feed.name.length).toBeGreaterThan(0);
             });
         });
     });
@@ -47,9 +47,9 @@ $(function () {
         });
         // TEST 5 ->  a test that ensures the menu changes visibility when the menu icon is clicked
         it('toggles visibility on click on the menu icon', function () {
-            $('.menu-icon-link').trigger('click'); // the menu displays when clicked
+            $('.menu-icon-link').click(); // the menu displays when clicked
             expect($('body').hasClass('menu-hidden')).toBe(false);
-            $('.menu-icon-link').trigger('click'); //  menu hides when clicked again
+            $('.menu-icon-link').click(); //  menu hides when clicked again
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
