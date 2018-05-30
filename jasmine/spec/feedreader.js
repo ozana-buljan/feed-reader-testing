@@ -79,7 +79,6 @@ $(function () {
             });
 
             loadFeed(1, function () {
-                newFeed =
                     // get new feed
                     newFeed = $('.feed').html();
                 done();
