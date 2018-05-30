@@ -1,9 +1,10 @@
 # Udacity FEND- Project #5:  RSS Feed Reader Testing
 
-Testing the Udacity's Feed Reader app using Javascript testing framework Jasmine.
+Task of this project was creating unit tests for Udacity's Feed Reader app. Javascript testing framework Jasmine was used for testing. Tests are conducted to ensure that the JS code works as it's supposed to.
 
+The app itself consists of different links about a topic. User can pick topics from the menu, by clicking on the hamburger menu icon. It takes them to a list of links related to the selected topic. Not very exciting, perhaps - but the app is only there as our playground for testing.
 
-## Tests
+## Tests conducted
 RSS Feeds:
 *   are defined
 *   have a valid URL defined
@@ -21,6 +22,9 @@ New Feed Selection:
 
 
 ## Running instructions
+
+### Web live
+Unfortunatlely, live web link is unavailable - because for some reason Github pages do not allow me to load the tests (which is the whole point of the task). Therefore,it needs to be run locally which you can achieve by downloading on cloning this repository. Instructions below.
 
 ### Run locally
 *   Download the repository: click download ZIP on the right of the screen and extract the zip file to your computer or clone the repository using Git.
